@@ -25,9 +25,12 @@ requirements:
 
 test:
   requires:
+    - anyio
+    - asyncclick
     - pytest
     - pytest-cov
     - python {{ python_min }}
+    - trio
   source_files:
     - test
     - tox.ini
